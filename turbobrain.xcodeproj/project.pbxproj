@@ -8,23 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		08DE940E1A4B3113009D2E1E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08DE940D1A4B3113009D2E1E /* main.cpp */; };
+		08DE94221A4B618B009D2E1E /* cat1.bf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 08DE941F1A4B6184009D2E1E /* cat1.bf */; };
+		08DE94231A4B618B009D2E1E /* helloworld1.bf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 08DE94201A4B6184009D2E1E /* helloworld1.bf */; };
+		08DE94241A4B618B009D2E1E /* helloworld2.bf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 08DE94211A4B6184009D2E1E /* helloworld2.bf */; };
+		08DE94261A4B6493009D2E1E /* dbfi.bf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 08DE94251A4B648D009D2E1E /* dbfi.bf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		08DE94081A4B3112009D2E1E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = tests;
+			dstSubfolderSpec = 16;
 			files = (
+				08DE94261A4B6493009D2E1E /* dbfi.bf in CopyFiles */,
+				08DE94221A4B618B009D2E1E /* cat1.bf in CopyFiles */,
+				08DE94231A4B618B009D2E1E /* helloworld1.bf in CopyFiles */,
+				08DE94241A4B618B009D2E1E /* helloworld2.bf in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		08DE940A1A4B3113009D2E1E /* turbobrain */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = turbobrain; sourceTree = BUILT_PRODUCTS_DIR; };
 		08DE940D1A4B3113009D2E1E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		08DE94141A4B315E009D2E1E /* ptr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ptr.h; sourceTree = "<group>"; };
+		08DE94181A4B41E9009D2E1E /* clator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = clator.h; sourceTree = "<group>"; };
+		08DE941F1A4B6184009D2E1E /* cat1.bf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cat1.bf; sourceTree = "<group>"; };
+		08DE94201A4B6184009D2E1E /* helloworld1.bf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = helloworld1.bf; sourceTree = "<group>"; };
+		08DE94211A4B6184009D2E1E /* helloworld2.bf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = helloworld2.bf; sourceTree = "<group>"; };
+		08DE94251A4B648D009D2E1E /* dbfi.bf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dbfi.bf; sourceTree = "<group>"; };
+		08DE94281A4B64EE009D2E1E /* prefix */ = {isa = PBXFileReference; lastKnownFileType = text; path = prefix; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +73,31 @@
 			isa = PBXGroup;
 			children = (
 				08DE940D1A4B3113009D2E1E /* main.cpp */,
+				08DE94181A4B41E9009D2E1E /* clator.h */,
+				08DE94141A4B315E009D2E1E /* ptr.h */,
+				08DE94271A4B64EE009D2E1E /* prefix */,
+				08DE941E1A4B6184009D2E1E /* tests */,
 			);
 			path = turbobrain;
+			sourceTree = "<group>";
+		};
+		08DE941E1A4B6184009D2E1E /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				08DE94251A4B648D009D2E1E /* dbfi.bf */,
+				08DE941F1A4B6184009D2E1E /* cat1.bf */,
+				08DE94201A4B6184009D2E1E /* helloworld1.bf */,
+				08DE94211A4B6184009D2E1E /* helloworld2.bf */,
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+		08DE94271A4B64EE009D2E1E /* prefix */ = {
+			isa = PBXGroup;
+			children = (
+				08DE94281A4B64EE009D2E1E /* prefix */,
+			);
+			path = prefix;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
